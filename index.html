@@ -26,6 +26,14 @@
       <ul v-else>
         <li>Goal</li>
       </ul>
+
+      <button @click="switchState">Switch</button>
+      <div v-show="btn1Visible || visible" class="container">
+        <button @click="btn1Toggle">V-show-Test</button>
+      </div>
+      <div v-if="btn2Visible || visible" class="container">
+        <button @click="btn2Toggle">V-if-Test</button>
+      </div>
     </section>
   </body>
 </html>
